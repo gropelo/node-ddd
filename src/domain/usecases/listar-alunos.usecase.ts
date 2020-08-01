@@ -1,14 +1,14 @@
 import { ListarAlunosRepository } from "../repositories/listar-alunos.repository";
 import { Aluno } from "../entities/aluno";
 
-interface Input {
+interface IDependencies {
     repository: ListarAlunosRepository;
     context: any;
 }
 
-const listarAlunosUseCase = ({repository, context}: Input): Promise<Aluno[]> => {
+const listarAlunosUseCaseFactory = ({repository, context}: IDependencies) => (): Promise<Aluno[]> => {
     console.info(context);
     return repository();
 };
 
-export { listarAlunosUseCase };
+export { listarAlunosUseCaseFactory };
