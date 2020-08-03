@@ -1,4 +1,4 @@
-import { ListarAlunosRepository } from "../../domain/repositories/listar-alunos.repository";
+import { ListarAlunosRepository } from "../../domain/interfaces/repositories/listar-alunos.repository";
 
 const listarAlunosRepositoryImpl: ListarAlunosRepository = () => {
     return Promise.resolve([

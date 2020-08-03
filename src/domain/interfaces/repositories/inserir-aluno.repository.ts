@@ -1,4 +1,4 @@
-import { Aluno } from "../entities/aluno"
+import { Aluno } from "../../entities/aluno"
 
 type InserirAlunoRepository = (aluno: Aluno) => Promise<void>;
 

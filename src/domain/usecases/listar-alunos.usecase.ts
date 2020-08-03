@@ -1,4 +1,4 @@
-import { ListarAlunosRepository } from "../repositories/listar-alunos.repository";
+import { ListarAlunosRepository } from "../interfaces/repositories/listar-alunos.repository";
 import { Aluno } from "../entities/aluno";
 
 interface IDependencies {

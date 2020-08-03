@@ -1,5 +1,5 @@
 import { Aluno } from "../entities/aluno";
-import { InserirAlunoRepository } from "../repositories/inserir-aluno.repository";
+import { InserirAlunoRepository } from "../interfaces/repositories/inserir-aluno.repository";
 import { ValidationError } from "../exceptions/validation-error";
 
 interface IDependencies {
