@@ -1,8 +1,8 @@
 import { InserirAlunoRepository } from "../../domain/interfaces/repositories/inserir-aluno.repository";
 import { Aluno } from "../../domain/entities/aluno";
 
-const inserirAlunoRepositoryImpl: InserirAlunoRepository = (aluno: Aluno) => {
+const inserirAlunoRepositoryMongodb: InserirAlunoRepository = (aluno: Aluno) => {
     return Promise.resolve();
 };
 
-export { inserirAlunoRepositoryImpl };
+export { inserirAlunoRepositoryMongodb };

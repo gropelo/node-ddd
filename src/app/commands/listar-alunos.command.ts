@@ -1,8 +1,8 @@
 import { listarAlunosUseCaseFactory } from "../../domain/usecases/listar-alunos.usecase";
-import { listarAlunosRepositoryImpl } from "../../infra/repositories/listar-alunos.repository-impl";
+import { listarAlunosRepositoryMongodb } from "../../infra/repositories/listar-alunos.repository-mongodb";
 
 const listarAlunosCommand = async () => {
-    const listarAlunosUseCase = listarAlunosUseCaseFactory({ repository: listarAlunosRepositoryImpl, context: 'traceid: bla' });  
+    const listarAlunosUseCase = listarAlunosUseCaseFactory({ repository: listarAlunosRepositoryMongodb, context: 'traceid: bla' });  
     return listarAlunosUseCase();
 };
 
